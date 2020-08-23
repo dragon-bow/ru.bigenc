@@ -15,7 +15,7 @@ public class BaseTest extends WebDriverSettings {
 
     @Test
     @Description("Проверяет работу поиска по слову \"футбол\" и то, что первый результат соответствует \"КОНФЕДЕРА́ЦИЯ ФУТБО́ЛА СЕ́ВЕРНОЙ...\".")
-    public void test() throws InterruptedException {
+    public void assertSearch() throws InterruptedException {
         driver.get("https://bigenc.ru/");
         String actualTitle = driver.getTitle();
         Assert.assertEquals(ElementNameData.TITLE, actualTitle);
